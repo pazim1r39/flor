@@ -1,0 +1,108 @@
+ /* ajuste de largura e altura dos elementos*/
+ *{
+    box-sizing: border-box;
+}
+header{
+    background-color: bisque;
+    width: 100%;
+    padding: 20px;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 15px;
+}
+header p{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 26px;
+    /* text-align: center*/
+    /* color: #300091*/
+}
+nav{
+    background-color: rgb(255, 255, 255);
+    float: left;
+    width: 20%;
+    /*border: 1px solid #ccc; /* Exemplo de borda */
+    border-radius: 15px;    /* Deixa os cantos arredondados */
+    margin-top: 15px;
+}
+nav ul li{
+    list-style-type: none;
+    border-bottom: 2px solid #141414;
+    width: 90%; 
+}
+nav ul li a{
+    text-decoration: none;
+    color:rgb(38, 56, 56);
+    font-size: 20px;
+    line-height: 50px;
+    padding-bottom: 10px;
+}
+nav ul li a:hover{ /*:hover = quando passar o mouse sobre o link */
+   color:burlywood;
+}
+main{
+    background-color:rgb(255, 255, 255);
+    float: left;
+    width: 60%;
+    padding: 20px;
+}
+main p{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 26px;
+}
+
+aside{
+    background-color:beige;
+    float: left;
+    width: 20%;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 15px;
+    box-shadow: 5px 5px 5px #141414;
+    /* 1º valor é pros lados, 2º valor para cima ou para baixo, 3º desfoque*/
+}  
+aside p{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 26px;
+   }
+footer{
+    background-color: white;
+    float: left;
+    width: 100%;
+    height: 100px;
+}
+footer p{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    line-height: 50px;
+}
+footer p a{
+    text-decoration: none;
+    color:rgb(92, 54, 6);
+    font-size: 20px;
+}
+footer p a:hover{ /*:hover = quando passar o mouse sobre o link */
+    color:#434343;
+}
+.centralizar-tudo {
+    display: flex;
+    justify-content: center; /* horizontal */
+    align-items: center;     /* vertical */
+    height: 100vh;           /* altura da tela inteira, opcional */
+  }
+
+/*responsividade = ajustar a largura da tela */
+/* For tables: */
+@media only screen and (max-width:800px){
+
+    aside{
+        width: 100%;
+        margin-bottom: 20px; //* descolar do footer e aparecer a sombra */
+    }
+    main{
+        width: 80%;
+    }
+}
